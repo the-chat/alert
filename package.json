@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.tsx",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": "git://github.com/the-chat/alert",
   "dependencies": {
     "@mui/icons-material": "^5.4.1",
