@@ -1,0 +1,14 @@
+{
+  "name": "@the-chat/alert",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.tsx",
+  "repository": "git://github.com/the-chat/alert",
+  "dependencies": {
+    "@mui/icons-material": "^5.4.1",
+    "@mui/material": "^5.4.1",
+    "@mui/styles": "^5.4.1",
+    "notistack": "^2.0.3",
+    "react": "^17.0.2"
+  }
+}
