@@ -1,15 +1,12 @@
 {
   "name": "@the-chat/alert",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "index.tsx",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "repository": "git://github.com/the-chat/alert",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
