@@ -3,6 +3,7 @@ import {
   VariantType,
   SnackbarKey,
   SnackbarProvider,
+  SnackbarMessage,
   useSnackbar,
 } from "notistack"
 import {Box, IconButton, Collapse, Typography, Theme} from "@mui/material"
@@ -98,7 +99,7 @@ const useAlert = () => {
   }
 
   return {
-    enqueueSnackbar: (message: string, options?: OptionsObject) => {
+    enqueueSnackbar: (message: SnackbarMessage, options?: OptionsObject) => {
       return enqueueSnackbar(
         {
           message,
