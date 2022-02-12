@@ -10,12 +10,16 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AlertProvider = void 0;
 var notistack_1 = require("notistack");
 var material_1 = require("@mui/material");
 var styles_1 = require("@mui/styles");
 var icons_material_1 = require("@mui/icons-material");
+var react_1 = __importDefault(require("react"));
 var useConfig = function (variant) {
     var theme = styles_1.useTheme();
     switch (variant) {
@@ -71,11 +75,11 @@ var useAlert = function () {
         var p = 1;
         return (
         // todo?: add "swipe to close" feature
-        React.createElement(material_1.Box, { sx: __assign(__assign({}, colors), { wordBreak: "break-word", display: "flex", alignItems: "center", p: p }), key: key },
-            React.createElement(Icon, { sx: { mr: p } }),
-            React.createElement(material_1.Typography, { variant: "body2", sx: { mr: "auto" } }, message),
-            React.createElement(material_1.IconButton, { onClick: function () { return closeSnackbar(key); }, color: "inherit" },
-                React.createElement(icons_material_1.Close, null))));
+        react_1.default.createElement(material_1.Box, { sx: __assign(__assign({}, colors), { wordBreak: "break-word", display: "flex", alignItems: "center", p: p }), key: key },
+            react_1.default.createElement(Icon, { sx: { mr: p } }),
+            react_1.default.createElement(material_1.Typography, { variant: "body2", sx: { mr: "auto" } }, message),
+            react_1.default.createElement(material_1.IconButton, { onClick: function () { return closeSnackbar(key); }, color: "inherit" },
+                react_1.default.createElement(icons_material_1.Close, null))));
     };
     return {
         enqueueSnackbar: function (message, options) {
@@ -104,7 +108,7 @@ var useStyles = styles_1.makeStyles({
 var AlertProvider = function (_a) {
     var children = _a.children;
     var snackbarRoot = useStyles().snackbarRoot;
-    return (React.createElement(notistack_1.SnackbarProvider, { TransitionComponent: material_1.Collapse, classes: {
+    return (react_1.default.createElement(notistack_1.SnackbarProvider, { TransitionComponent: material_1.Collapse, classes: {
             containerRoot: snackbarRoot,
         }, maxSnack: 1 }, children));
 };
