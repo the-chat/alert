@@ -9,7 +9,7 @@ import {
 import {Box, IconButton, Collapse, Typography, Theme} from "@mui/material"
 import {makeStyles, useTheme} from "@mui/styles"
 import {Close, Error, Warning, Info, CheckCircle} from "@mui/icons-material"
-import {FC} from "react"
+import React, {FC} from "react"
 
 const useConfig = (variant: VariantType) => {
   const theme = useTheme<Theme>()

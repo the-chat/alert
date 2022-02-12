@@ -10,12 +10,16 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AlertProvider = void 0;
 var notistack_1 = require("notistack");
 var material_1 = require("@mui/material");
 var styles_1 = require("@mui/styles");
 var icons_material_1 = require("@mui/icons-material");
+var react_1 = __importDefault(require("react"));
 var useConfig = function (variant) {
     var theme = styles_1.useTheme();
     switch (variant) {
