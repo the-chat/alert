@@ -3,10 +3,6 @@
   "version": "1.0.9",
   "license": "MIT",
   "main": "dist/index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "repository": "git://github.com/the-chat/alert",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
