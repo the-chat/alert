@@ -6,10 +6,10 @@ import {
   SnackbarMessage,
   useSnackbar,
 } from "notistack"
-import {Box, IconButton, Collapse, Typography, Theme} from "@mui/material"
-import {makeStyles, useTheme} from "@mui/styles"
-import {Close, Error, Warning, Info, CheckCircle} from "@mui/icons-material"
-import React, {FC} from "react"
+import { Box, IconButton, Collapse, Typography, Theme } from "@mui/material"
+import { makeStyles, useTheme } from "@mui/styles"
+import { Close, Error, Warning, Info, CheckCircle } from "@mui/icons-material"
+import React, { FC } from "react"
 
 const useConfig = (variant: VariantType) => {
   const theme = useTheme<Theme>()
@@ -63,14 +63,14 @@ const useConfig = (variant: VariantType) => {
 }
 
 const useAlert = () => {
-  const {enqueueSnackbar, closeSnackbar} = useSnackbar()
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar()
 
   // own variable for linting
   const useContent = (
     key: SnackbarKey,
-    {message, variant}: {message: string; variant: VariantType}
+    { message, variant }: { message: string; variant: VariantType }
   ) => {
-    const {colors, Icon} = useConfig(variant)
+    const { colors, Icon } = useConfig(variant)
 
     // todo: to config
     const p = 1
@@ -87,8 +87,8 @@ const useAlert = () => {
         }}
         key={key}
       >
-        <Icon sx={{mr: p}} />
-        <Typography variant="body2" sx={{mr: "auto"}}>
+        <Icon sx={{ mr: p }} />
+        <Typography variant="body2" sx={{ mr: "auto" }}>
           {message}
         </Typography>
         <IconButton onClick={() => closeSnackbar(key)} color="inherit">
@@ -130,8 +130,8 @@ const useStyles = makeStyles({
   },
 })
 
-const AlertProvider: FC = ({children}) => {
-  const {snackbarRoot} = useStyles()
+const AlertProvider: FC = ({ children }) => {
+  const { snackbarRoot } = useStyles()
 
   return (
     <SnackbarProvider
@@ -146,5 +146,5 @@ const AlertProvider: FC = ({children}) => {
   )
 }
 
-export {AlertProvider}
+export { AlertProvider }
 export default useAlert
