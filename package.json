@@ -1,8 +1,11 @@
 {
   "name": "@the-chat/alert",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "rm -rf dist&&tsc"
+  },
   "repository": "git://github.com/the-chat/alert",
   "dependencies": {
     "@emotion/react": "^11.7.1",
