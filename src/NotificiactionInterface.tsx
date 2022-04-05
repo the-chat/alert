@@ -1,3 +1,4 @@
+import { Close } from "@mui/icons-material"
 import { Box, IconButton, Typography } from "@mui/material"
 import {
   OptionsObject,
