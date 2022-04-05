@@ -53,3 +53,5 @@ const [useAlert, AlertProvider] = genContext<ProviderContext>(
 
 export { AlertProvider }
 export default useAlert
+
+// todo?: comments that describes how code works
