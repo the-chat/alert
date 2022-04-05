@@ -13,6 +13,7 @@
     "@mui/icons-material": "^5.4.1",
     "@mui/material": "^5.4.1",
     "@mui/styles": "^5.4.1",
+    "@the-chat/gen-context": "^1.1.6",
     "notistack": "^2.0.3"
   },
   "devDependencies": {
