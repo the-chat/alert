@@ -49,9 +49,11 @@ type Config = {
 }
 
 const useConfig = (variant: VariantType): Config => {
+  const defaultConfig = useDefaultConfig()
+
   switch (variant) {
     case "default":
-      return useDefaultConfig()
+      return defaultConfig
     case "error":
       return errorConfig
     case "info":
