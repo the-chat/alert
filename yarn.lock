@@ -272,10 +272,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
   integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
-"@the-chat/gen-context@^1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.7.tgz#a230beb853586f6b8532eba1e2749d94460cb0fa"
-  integrity sha512-CsofK3U46JqrR6qSWdLg3H0S88DxXgtigOCApptHWNePNaEXtd9B4f5U8UKHzTv/sslFryBpKx3EhQ4Uirc94Q==
+"@the-chat/gen-context@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@the-chat/gen-context/-/gen-context-1.1.8.tgz#fb6a84192b36eb5f885444b877365c397066ff35"
+  integrity sha512-XzHYC3w+CaTdWC3X01Mr02lZQ9WK36ggN/CeE9xqhvspU7ZB7rTfZS5Zz6SvzjNLNskPg+z+Ka3qvJVowy/jwA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
